@@ -23,7 +23,7 @@ public class User implements UserDetails {
     @GeneratedValue
     private Integer id;
     private String fullName;
-    private String username;
+    private String nickname;
     private String email;
     private String phoneNumber;
     private String state;
@@ -44,7 +44,7 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return username;
+        return email;
     }
 
     @Override
