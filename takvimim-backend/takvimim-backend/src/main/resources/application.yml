@@ -1,0 +1,15 @@
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/takvimim
+        username: atakan
+        password: Ata78kan.
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update # refresh database after every run
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+        database: mysql
+        database-platform: org.hibernate.dialect.MySQLDialect
